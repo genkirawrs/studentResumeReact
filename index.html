@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+      // Our code will go here
+      function App(props) {
+        return (
+            <div>
+                <header>
+                <h1>{props.studentName} Resume</h1>
+                </header>
+                <main>
+                <section>
+                    <header>
+                    <h2>Contact Information</h2>
+                    </header>
+                    <address class="contact-info">
+                    Name: {props.studentName}
+                    <br/>
+                    Email: <a href="mailto:sally.student@mymail.com">sally.student@mymail.com</a>
+                    <br/>
+                    Phone: <a href="tel:+1234567890">(123) 456-7890</a>
+                    <br/>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally's professional photo" width="300"/>
+                    </address>
+                </section>
+                <section>
+                    <header>
+                    <h2>Education</h2>
+                    </header>
+                    <div>
+                    <h3>University of Art &amp; Design, New York</h3>
+                    <i>September 2008 - June 2012</i>
+                        <br/>
+                        Bachelor of Science in Graphic Design
+                    </div>
+                </section>
+                <section>
+                    <header>
+                    <h2>Employment History</h2>
+                    </header>
+                    <div>
+                    <h3>Company Name 1</h3>
+                    <i>Web Designer</i><br/>
+                    January 2015 - present<br/>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis?</li>
+                    </ul>
+                    </div>
+                    <div>
+                    <header>
+                        <h3>Company Name 2</h3>
+                    </header>
+                    <i>Junior Web Designer</i><br/>
+                    March 2013 - November 2014<br/>
+                    <ul>
+                        <li>Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</li>
+                        <li>Culpa est iusto doloribus consectetur fugit quis accusantium hic assumenda, dolorem autem dolor voluptatibus dolore sunt sed labore neque, saepe illum et!</li>
+                    </ul>
+                    </div>
+                </section>
+                </main>
+                <footer>&copy; 2020 {props.studentName}</footer>
+        </div>
+        );
+      }
+
+      ReactDOM.render(
+  <App className='my-class' studentName='Sally Student'/>,
+  document.querySelector('#application-root')
+);
+    </script>
+
+
+</body>
+</html>

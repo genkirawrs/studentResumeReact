@@ -1,0 +1,46 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:cornsilk;
+    line-height: 1.4em;
+    font-size:18px;
+  }
+  
+  nav {
+    width:100%;
+    clear:both;
+    display:inline-block;
+  }
+  
+  nav ul {
+    padding-inline-start:0px;
+    margin-block-start: 0em;
+  }
+  nav ul li {
+    list-style:none;
+    display:inline-block;
+    margin: 0px 20px 0px 0px;
+  }
+  
+  section{
+    margin-top:20px;
+  }
+  
+  .contact-info {
+    font-size:18px;
+    font-style:normal;
+  }
+  
+  a {
+    text-decoration:none;
+    color:darkcyan;
+    font-weight:bold;
+  }
+  
+  a:hover {
+    text-decoration:underline;
+    font-weight:bold;
+  }
+  
+  img {
+    border:1px solid burlywood;
+  }
